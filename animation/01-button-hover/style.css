@@ -11,10 +11,16 @@
 button {
   width: 158px;
   height: 55px;
-  border: 1px solid black;
+  border: 1px solid rgb(168, 15, 15);
   border-radius: 5px;
-  background-color: white;
+  background-color: rgb(202, 191, 36);
   color: black;
   font-size: small;
   text-align: center;
+  transition: all .78s ease;
+}
+
+button:hover {
+  font-size: large;
+  cursor: pointer;
 }
