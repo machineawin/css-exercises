@@ -10,6 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /*Trialling slide down options
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;*/
 }
 
 .dropdown-menu {
@@ -23,6 +29,11 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: rgb(17, 194, 218);
+  cursor: pointer;
+}
+
 ul {
   position: absolute;
   left: -25%;
@@ -30,7 +41,24 @@ ul {
   width: 160px;
   list-style: none;
   text-align: center;
+  overflow: hidden;
+  max-height: 0;
+  transition: ease-out .25s;
 }
+/* Adding new style 'dropdown-content' to work on changing links on cursor*/
+.dropdown-content {
+  color: brown;
+  cursor: pointer;
+ /* display: none;*/
+}
+
+.dropdown-menu:hover ul {
+  max-height: 400px;
+  transition: ease-out .5s;
+
+}
+
+.dropdown-content li:hover {background-color: rgb(218, 214, 214);}
 
 li {
   padding: 16px;
