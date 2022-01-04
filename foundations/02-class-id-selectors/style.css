@@ -1,0 +1,20 @@
+.odd-line {
+    background-color: rgb(230, 98, 120);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#second-line {
+    color: blue;
+    font-size: 36px;
+}
+
+.third-line {
+    font-size: 24px;
+}
+
+#fourth-line {
+    font-size: 24px;
+    background-color: green;
+    font-weight: bold;
+
+}
